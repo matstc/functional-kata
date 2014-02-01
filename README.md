@@ -46,9 +46,13 @@ We will implement our own version of the following list functions:
 
     F.group_by([1,2,4,5], function(elem){return elem % 2;}) → {1: [1,5], 0: [2,4]}
 
+Extra points for grouping multiple arrays into one hash.
+
 ## Zip
 `zip` accepts arrays as arguments and returns an array of arrays containing the first elements of each array in the first array, and then the second elements of each array, until the longest array is exhausted. Zips are padded with nulls.
 
     F.zip([1,2,3], [4,5,6], [7,8,9,10]) → [[1,4,7], [2,5,8], [3,6,9], [null, null, 10]]
+
+Zipping empty arrays should return an empty array.
 
 See the [rdoc for Enumerable](http://www.ruby-doc.org/core-2.1.0/Enumerable.html) for more complete specs.

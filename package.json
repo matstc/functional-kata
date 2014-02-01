@@ -1,0 +1,8 @@
+{
+  "name": "functional-kata",
+  "version": "0.1.0",
+  "devDependencies": {
+    "jasmine-node": "~1.13.0",
+    "assert-plus": "*"
+  }
+}

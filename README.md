@@ -12,6 +12,14 @@ We have a deck of features to implement:
 2. We switch one member of the pair every X minutes
 3. Go back to step 2
 
+# The Dev Cycle
+
+1. Write test
+2. Code to make test pass
+3. Refactor
+4. Consider a commit
+5. Go back to #1
+
 # Kata
 
 We will implement our own version of the following list functions:

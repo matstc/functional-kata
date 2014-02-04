@@ -3,7 +3,9 @@
 - Test driving
 - Refactoring
 
-# The Format
+# The Dojo Format
+A pair is working on the computer—working with a projector so the rest of the group can watch and kibitz.
+
 There is a deck of features to implement:
 
 1. We only use one computer
@@ -80,5 +82,14 @@ As you implement the kata, pay attention to potential refactorings. Ask yourselv
 - Are we going through the whole array when we don't have to?
 - Can we get rid of old-style for loops?
 - Can we implement one function in terms of another?
+
+# Code Coverage
+If you are curious about code coverage, you can generate a coverage report:
+
+`NODE_PATH=src grunt jasmine_node`
+
+The coverage report will be in `coverage/lcov-report/index.html`.
+
+<hr>
 
 Originally implemented @ [JSLuxembourg](https://twitter.com/JSLuxembourg).

@@ -86,7 +86,7 @@ As you implement the kata, pay attention to potential refactorings. Ask yourselv
 # Code Coverage
 If you are curious about code coverage, you can generate a coverage report:
 
-`NODE_PATH=src grunt jasmine_node`
+    NODE_PATH=src grunt jasmine_node
 
 The coverage report will be in `coverage/lcov-report/index.html`.
 

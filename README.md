@@ -1,27 +1,33 @@
 # The Goal
-
 - Pairing
 - Test driving
 - Refactoring
 
 # The Format
+There is a deck of features to implement:
 
-We have a deck of features to implement:
+1. We only use one computer
+2. A pair starts off on the first feature
+3. We switch one member of the pair every 5 minutes
+4. Go back to step 3
 
-1. A pair starts off on the first feature
-2. We switch one member of the pair every X minutes
-3. Go back to step 2
+# Install
+You will need `node` and `npm`. Once you have those, run `npm install` in the root directory and make sure running the tests works well by running the script `run-tests`.
 
-# The Dev Cycle
+You might have to install `mocha` globally so the mocha executable is on your path:
 
-1. Write test
-2. Code to make test pass
-3. Refactor
+    npm install -g mocha
+
+# The Development Cycle
+1. Write one test (in the `spec/f_spec.js` file)
+2. Code to make that one test pass (in the `src/f.js` file)
+3. Refactor to make it pretty
 4. Consider a commit
 5. Go back to #1
 
-# Kata
+Run the script `run-tests` to run the tests. The tests will run automatically as you save your js files.
 
+# The Kata
 We will implement our own version of the following list functions:
 
 ## All
@@ -64,3 +70,15 @@ Extra points for grouping multiple arrays into one hash.
 Zipping empty arrays should return an empty array.
 
 See the [rdoc for Enumerable](http://www.ruby-doc.org/core-2.1.0/Enumerable.html) for more complete specs.
+
+# Kata Notes
+As you implement the kata, pay attention to potential refactorings. Ask yourselves questions like:
+
+- Did we cover all edge cases?
+- What happens in our  code when the arrays are empty?
+- What happens in our code when the predicate returns `undefined`?
+- Are we going through the whole array when we don't have to?
+- Can we get rid of old-style for loops?
+- Can we implement one function in terms of another?
+
+Originally implemented @ [JSLuxembourg](https://twitter.com/JSLuxembourg).
